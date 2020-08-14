@@ -2,8 +2,8 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
 const useSiteMetadata = () => {
-  const { site } = useStaticQuery(
-    graphql`
+    const { site } = useStaticQuery(
+        graphql `
       query SiteMetaData {
         site {
           siteMetadata {
@@ -12,12 +12,8 @@ const useSiteMetadata = () => {
               bio
               photo
               contacts {
-                facebook
-                linkedin
                 github
                 twitter
-                telegram
-                instagram
                 email
                 rss
                 vkontakte
@@ -42,9 +38,9 @@ const useSiteMetadata = () => {
         }
       }
     `
-  );
+    );
 
-  return site.siteMetadata;
+    return site.siteMetadata;
 };
 
 export default useSiteMetadata;
