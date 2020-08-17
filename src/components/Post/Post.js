@@ -8,12 +8,18 @@ import Meta from './Meta';
 import Tags from './Tags';
 import styles from './Post.module.scss';
 import type { Node } from '../../types';
-
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+} from 'react-share';
 type Props = {
-  post: Node
+  post: Node,
+  url: string,
 };
 
-const Post = ({ post }: Props) => {
+const Post = ({ post, url }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
   const { tags, title, date } = post.frontmatter;
@@ -26,7 +32,16 @@ const Post = ({ post }: Props) => {
         <Content body={html} title={title} />
       </div>
 
+
       <div className={styles['post__footer']}>
+        <div> 
+          <FacebookShareButton url={url}>
+              <FacebookIcon size={40} round />
+          </FacebookShareButton>
+          <TwitterShareButton url={url}>
+              <TwitterIcon size={40} round />
+          </TwitterShareButton>
+        </div>
         <Meta date={date} />
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
         <Author />

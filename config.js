@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    url: 'https://harukitosa.com/',
+    url: 'https://harukitosa.com',
     pathPrefix: '/',
     title: 'Blog by John Doe',
     subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
