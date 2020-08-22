@@ -3,7 +3,7 @@ title: CyberAgent 2days サーバーサイド向け 開発型インターンシ�
 date: "2020-06-09"
 template: "post"
 draft: false
-slug: "humane-typography-in-the-digital-age"
+slug: "cyber-agent-2day-intern"
 category: "Engineer"
 tags:
   - "golang"
