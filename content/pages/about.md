@@ -4,4 +4,4 @@ template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
-まだ未作成です時間があれば記入します
+情報系の学部三年生

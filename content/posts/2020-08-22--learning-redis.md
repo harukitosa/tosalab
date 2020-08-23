@@ -15,46 +15,52 @@ socialImage: "/media/2020-08-22.jpeg"
 ---
 
 ## 概要
-isuconの事前学習としてredisについて学習してみたものをまとめています。
+
+isucon の事前学習として redis について学習してみたものをまとめています。
 触り始めなのである程度、基本的なコマンドを網羅したい。
 
-redisについて(wiki参照 https://ja.wikipedia.org/wiki/Redis)
->Redisは、ネットワーク接続された永続化可能なインメモリデータベース。連想配列（キー・バリュー）、リスト、セットなどのデータ構造を扱える。いわゆるNoSQLデータベースの一つ。オープンソースソフトウェアプロジェクトであり、Redis Labs（英語版）がスポンサーとなって開発されている。
+redis について(wiki 参照 https://ja.wikipedia.org/wiki/Redis)
 
-- メモリにデータをkey, valueの形で保存することができる。
+> Redis は、ネットワーク接続された永続化可能なインメモリデータベース。連想配列（キー・バリュー）、リスト、セットなどのデータ構造を扱える。いわゆる NoSQL データベースの一つ。オープンソースソフトウェアプロジェクトであり、Redis Labs（英語版）がスポンサーとなって開発されている。
+
+- メモリにデータを key, value の形で保存することができる。
 - データをキャッシュする際に使用されている。
 
-# redisの導入
+# redis の導入
 
-macOSのみ
+macOS のみ
+
 ```zsh
 brew install redis
 ```
 
 その後起動させる
+
 ```zsh
 redis-server
 ```
 
-redis-cliコマンドを使用すれば対話的にredisのコマンドを打ち込むことができる。
-
+redis-cli コマンドを使用すれば対話的に redis のコマンドを打ち込むことができる。
 
 # 基本的なコマンド
 
 #### SET
-データをkey, valueの形で保存する。
+
+データを key, value の形で保存する。
 
 #### GET
-keyを指定してデータを取得する。
 
-#### DEL 
-keyを指定してデータを削除する。
+key を指定してデータを取得する。
+
+#### DEL
+
+key を指定してデータを削除する。
 
 #### EXISTS
-keyに対応するデータが存在するかどうかを調べる。
 
+key に対応するデータが存在するかどうかを調べる。
 
-これらの動作をredigo/redisを使用して動作を確認していく。
+これらの動作を redigo/redis を使用して動作を確認していく。
 
 ※関数等にまとめた方がいいが今回は学習なので省略
 
@@ -114,20 +120,23 @@ func main() {
 
 ```
 
-# list型のコマンド
+# list 型のコマンド
 
 #### RPUSH
-keyに対応するリストにデータを挿入
+
+key に対応するリストにデータを挿入
 
 #### LRANGE
-keyに対応するリストのデータを返す
+
+key に対応するリストのデータを返す
 
 #### LINDEX
-keyに対応するリストの指定したindexのデータを返す
+
+key に対応するリストの指定した index のデータを返す
 
 #### LREM
 
-keyに対応するリストの指定したvalueのデータを削除する
+key に対応するリストの指定した value のデータを削除する
 
 ```go
 package main
@@ -204,7 +213,8 @@ func main() {
 ```
 
 # 構造体を保存したい
-データベースから取得できるデータをそのまま保存しておいて置けるのが理想。keyをid(primary_key)にしてvalueをjsonでデコードしたデータを保存することにより実装してみる。
+
+データベースから取得できるデータをそのまま保存しておいて置けるのが理想。key を id(primary_key)にして value を json でデコードしたデータを保存することにより実装してみる。
 
 ```go
 package main
@@ -262,14 +272,14 @@ func main() {
 
 ```
 
-これで一応構造体をredisに保存することができたが、idごとにkeyを作らなくてはいけないのが不便、かついちいちjsonにパースしなくてはならないので、あんまり使い勝手が良くなさそう。redisにはハッシュ型があるので次回はそちらで実装してみたい。またデータをsortして保存して置けるsortedリストなどのもあるらしいのでそちらも調査していく予定です。
-
+これで一応構造体を redis に保存することができたが、id ごとに key を作らなくてはいけないのが不便、かついちいち json にパースしなくてはならないので、あんまり使い勝手が良くなさそう。redis にはハッシュ型があるので次回はそちらで実装してみたい。またデータを sort して保存して置ける sorted リストなどのもあるらしいのでそちらも調査していく予定です。
 
 # 参考サイト
-[MacにRedisをインストールする](https://qiita.com/sawa-@github/items/1f303626bdc219ea8fa1)
 
-[RedisをCentOS7にyumインストールする手順](https://weblabo.oscasierra.net/redis-centos7-install-yum/)
+[Mac に Redis をインストールする](https://qiita.com/sawa-@github/items/1f303626bdc219ea8fa1)
+
+[Redis を CentOS7 に yum インストールする手順](https://weblabo.oscasierra.net/redis-centos7-install-yum/)
 
 [examples-redigo](https://github.com/pete911/examples-redigo)
 
-[LPUSHのドキュメント](https://redis.io/commands/lpush)
+[LPUSH のドキュメント](https://redis.io/commands/lpush)
