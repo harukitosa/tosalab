@@ -3,7 +3,7 @@
 module.exports = {
     url: 'https://harukitosa.com',
     pathPrefix: '/',
-    title: 'Blog by John Doe',
+    title: 'tosablog',
     subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
     copyright: '© All rights reserved.',
     disqusShortname: '',
