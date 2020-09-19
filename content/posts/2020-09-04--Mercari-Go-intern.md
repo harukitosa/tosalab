@@ -45,9 +45,8 @@ golang は趣味ではよくかいていますが、アルバイトとかで書�
 
 # 講義編
 
-初日と三日目は講義編でした！講師は[tenntennʕ ◔ϖ◔ʔ ==Go](https://twitter.com/tenntenn)さんで下のスライドを元に行われました。
+初日と三日目は講義編でした！講師は[tenntennʕ ◔ϖ◔ʔ ==Go](https://twitter.com/tenntenn)さんでこの[スライド](https://docs.google.com/presentation/d/1I4pHnzV2dFOMbRcpA-XD0TaLcX6PBKpls6WxGHoMjOg/edit)を元に行われました。
 （なんと無料で公開されています。すごい）
-https://docs.google.com/presentation/d/1I4pHnzV2dFOMbRcpA-XD0TaLcX6PBKpls6WxGHoMjOg/edit
 
 講義資料が本当によくまとまっているので、開発中も閲覧しながら参考にしていました。
 
