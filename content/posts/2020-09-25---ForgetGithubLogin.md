@@ -8,7 +8,7 @@ category: "Engineer"
 tags:
   - "github"
 description: "先週末あたりからやらかしてしまったこととその顛末と最終的にどうやってアカウントを復活させたかを記録したいと思います。"
-socialImage: "/media/github-ogp.001.jpeg"
+socialImage: "/media/github-opg.001.jpeg"
 ---
 
 今週末あたりからやらかしてしまったこととその顛末と最終的にどうやってアカウントを復活させたかを記録したいと思います。
