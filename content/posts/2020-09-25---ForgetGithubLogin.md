@@ -8,7 +8,7 @@ category: "Engineer"
 tags:
   - "github"
 description: "先週末あたりからやらかしてしまったこととその顛末と最終的にどうやってアカウントを復活させたかを記録したいと思います。"
-socialImage: "https://res.cloudinary.com/dam6j1bfo/image/upload/l_text:Sawarabi%20Gothic_120_bold:github の二段階認証(two-factor authentication)のコードがわからずさらにリカバリーコードを無くしてしまった話,co_rgb:333,w_1100,c_fit/v1600749907/hogeogp.001_zm7m59.jpg"
+socialImage: "/media/github-ogp.001.jpeg"
 ---
 
 今週末あたりからやらかしてしまったこととその顛末と最終的にどうやってアカウントを復活させたかを記録したいと思います。
