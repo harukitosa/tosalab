@@ -69,8 +69,11 @@ firestore の無料枠をちょっと超えてしまいましたが、金の力�
 ### 最終的な技術選定
 
 Nuxt(Vue) フロントエンド
+
 firestore/auth データベース、認証
+
 vercel デプロイ先
+
 Cloudinary ogp 生成
 
 ## 結論
