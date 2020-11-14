@@ -6,7 +6,7 @@ draft: false
 slug: "forget-github"
 category: "Engineer"
 tags:
-  - "github"
+    - "github"
 description: "先週末あたりからやらかしてしまったこととその顛末と最終的にどうやってアカウントを復活させたかを記録したいと思います。"
 socialImage: "/media/github-opg.001.jpeg"
 ---

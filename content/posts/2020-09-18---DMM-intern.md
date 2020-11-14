@@ -6,7 +6,7 @@ draft: false
 slug: "dmm-intern"
 category: "Engineer"
 tags:
-  - "intern"
+    - "intern"
 description: "9/7~18日でDMMのインターンシップに参加してきましたことを実装を中心に振り返っていく記事です。"
 socialImage: "/media/dmm_intern1.jpg"
 ---

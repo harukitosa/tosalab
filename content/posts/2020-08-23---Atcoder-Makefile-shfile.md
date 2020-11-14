@@ -6,8 +6,8 @@ draft: false
 slug: "atcoder-makefile-shfile"
 category: "Engineer"
 tags:
-  - "atcoder"
-  - "小技"
+    - "atcoder"
+    - "小技"
 description: "MacOSにてC++用のコンパイル環境をできるだけ少ないコマンドで実現できるようにファイルを書いたのでそれを掲載する。"
 socialImage: "/media/2020-08-22.jpeg"
 ---

@@ -6,8 +6,8 @@ draft: false
 slug: "syukyou-webapp"
 category: "Engineer"
 tags:
-  - "webapp"
-  - "個人制作"
+    - "webapp"
+    - "個人制作"
 description: "あなただけの宗教を作ることができる宗教.comというWebアプリケーションを開発しました"
 socialImage: "/media/syukyou.001.jpeg"
 ---

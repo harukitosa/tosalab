@@ -6,8 +6,8 @@ draft: false
 slug: "mercari-golang-intern"
 category: "Engineer"
 tags:
-  - "intern"
-  - "golang"
+    - "intern"
+    - "golang"
 description: "夏休みの 8/31~9/4 に開催された mercari online summer internship に参加して来ました！"
 socialImage: "/media/mercari.jpeg"
 ---

@@ -1,9 +1,9 @@
 ---
-title: "About me"
+title: "とさって誰？"
 template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
-情報系の学部三年生
-
-ひょんなことからプログラミングに出会う。
+-   20 歳
+-   明治大学理工学部情報科
+-   アプリ開発大好き
