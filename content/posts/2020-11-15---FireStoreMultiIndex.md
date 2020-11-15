@@ -46,7 +46,7 @@ return await db
 親切に google console のエラーの欄に複合インデックスを作成するページへのリンクが出ていたので、それを踏んで firebase から複合クエリを作成（作成に 3 分ほどかかりました）。
 再度、同様のクエリを飛ばしてみたところ正常にデータを取得する事ができました。
 
-参照:公式ドキュメント Cloud Firestore でのインデックス管理[https://firebase.google.com/docs/firestore/query-data/indexing?hl=ja]
+参照:公式ドキュメント [Cloud Firestore でのインデックス管理](https://firebase.google.com/docs/firestore/query-data/indexing?hl=ja)
 
 ## まとめ
 
