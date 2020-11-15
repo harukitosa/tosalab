@@ -1,17 +1,17 @@
 // @flow strict
-import React from 'react';
-import renderer from 'react-test-renderer';
-import { useStaticQuery, StaticQuery } from 'gatsby';
-import siteMetadata from '../../../jest/__fixtures__/site-metadata';
-import Layout from './Layout';
-import type { RenderCallback } from '../../types';
+import React from "react";
+import renderer from "react-test-renderer";
+import { useStaticQuery, StaticQuery } from "gatsby";
+import siteMetadata from "../../../jest/__fixtures__/site-metadata";
+import Layout from "./Layout";
+import type { RenderCallback } from "../../types";
 
-describe('Layout', () => {
+describe("Layout", () => {
   const props = {
     ...siteMetadata,
-    children: 'test',
-    description: 'test',
-    title: 'test'
+    children: "test",
+    description: "test",
+    title: "test"
   };
 
   beforeEach(() => {
@@ -23,7 +23,7 @@ describe('Layout', () => {
     );
   });
 
-  it('renders correctly', () => {
+  it("renders correctly", () => {
     const tree = renderer.create(<Layout {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });

@@ -48,7 +48,17 @@ return await db
 
 参照:公式ドキュメント [Cloud Firestore でのインデックス管理](https://firebase.google.com/docs/firestore/query-data/indexing?hl=ja)
 
+
 ## まとめ
 
 NoSQL あたり、もうすこしちゃんと調べて開発したいと思いました。(小学生並の感想)
 このあたり RDB の方が柔軟なのかな。
+
+## 追伸
+
+katexの設定があって入れてみたら数式もかけるそう。
+神
+
+$
+\frac{1}{2}
+$

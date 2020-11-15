@@ -4,19 +4,28 @@
   ],
   "packageRules": [
     {
-      "packagePatterns": ["^eslint"],
+      "packagePatterns": [
+        "^eslint"
+      ],
       "groupName": "eslint"
     },
     {
-      "packagePatterns": ["gatsby"],
+      "packagePatterns": [
+        "gatsby"
+      ],
       "groupName": "gatsby"
     },
     {
-      "packageNames": ["react", "react-dom"],
+      "packageNames": [
+        "react",
+        "react-dom"
+      ],
       "groupName": "react"
     }
   ],
-  "labels": ["renovate"],
+  "labels": [
+    "renovate"
+  ],
   "prHourlyLimit": 4,
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
