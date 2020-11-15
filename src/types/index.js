@@ -44,7 +44,7 @@ export type Edge = {
     node: Node
 };
 
-export type Edges = Array < Edge > ;
+export type Edges = Array < Edge >;
 
 export type AllMarkdownRemark = {
     allMarkdownRemark: {

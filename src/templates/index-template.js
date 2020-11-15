@@ -1,13 +1,13 @@
 // @flow strict
-import React from "react";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import Sidebar from "../components/Sidebar";
-import Feed from "../components/Feed";
-import Page from "../components/Page";
-import Pagination from "../components/Pagination";
-import { useSiteMetadata } from "../hooks";
-import type { PageContext, AllMarkdownRemark } from "../types";
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import Sidebar from '../components/Sidebar';
+import Feed from '../components/Feed';
+import Page from '../components/Page';
+import Pagination from '../components/Pagination';
+import { useSiteMetadata } from '../hooks';
+import type { PageContext, AllMarkdownRemark } from '../types';
 
 type Props = {
     data: AllMarkdownRemark,
@@ -15,23 +15,22 @@ type Props = {
 };
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
-    const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
 
-    const {
-        currentPage,
-        hasNextPage,
-        hasPrevPage,
-        prevPagePath,
-        nextPagePath,
-    } = pageContext;
+  const {
+    currentPage,
+    hasNextPage,
+    hasPrevPage,
+    prevPagePath,
+    nextPagePath,
+  } = pageContext;
 
-    const { edges } = data.allMarkdownRemark;
-    const pageTitle =
-        currentPage > 0
-            ? `Posts - Page ${currentPage} - ${siteTitle}`
-            : siteTitle;
+  const { edges } = data.allMarkdownRemark;
+  const pageTitle = currentPage > 0
+    ? `Posts - Page ${currentPage} - ${siteTitle}`
+    : siteTitle;
 
-    return (
+  return (
         <Layout title={pageTitle} description={siteSubtitle}>
             <Sidebar isIndex />
             <Page>
@@ -44,7 +43,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
                 />
             </Page>
         </Layout>
-    );
+  );
 };
 
 export const query = graphql`
