@@ -35,6 +35,7 @@ return await db
 ```
 
 よくよく調べてみるとこれは firestore の複合クエリに当たるものだったよう。
+今回で言うと orderBy で create_date の指定、where で work_type の二つを指定しているので該当していますね。
 
 > 複合クエリ
 > 複数の where() メソッドをつなぎ合わせて、より具体的なクエリ（論理 AND）を作成することもできます。ただし、等価演算子（==）と range 句または array-contains 句（<、<=、>、>=、array-contains）を組み合わせる場合は、必ず複合インデックスを作成してください。
