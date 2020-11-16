@@ -9,7 +9,6 @@ tags:
     - "firestore"
     - "frontend"
 description: "複合クエリをリクエストする際にエラーが出たのでそれの解消方法を軽く載せて置きつつ、そのあたりを調査。"
-socialImage: "/media/FireStoreMultiIndex/ogp.jpeg"
 ---
 
 ## 要約

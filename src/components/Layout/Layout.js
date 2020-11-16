@@ -1,25 +1,21 @@
 // @flow strict
 import React from "react";
 import Helmet from "react-helmet";
-import { withPrefix } from "gatsby";
 import type { Node as ReactNode } from "react";
-import { useSiteMetadata } from "../../hooks";
 import styles from "./Layout.module.scss";
 
 type Props = {
   children: ReactNode,
   title: string,
   description?: string,
-  socialImage?: string,
 };
 
 const Layout = ({
-  children, title, description, socialImage
+  children, title, description
 }: Props) => {
-  const { author, url } = useSiteMetadata();
-  const metaImage = socialImage != null ? socialImage : author.photo;
-  const metaImageUrl = url + withPrefix(metaImage);
-
+  const metaImageUrl = `https://res.cloudinary.com/dam6j1bfo/image/upload/l_text:Sawarabi%20Gothic_120_bold:${
+    title
+  },co_rgb:333,w_1100,c_fit/v1600749907/hogeogp.001_zm7m59.jpg`;
   return (
     <div className={styles.layout}>
       <Helmet>
