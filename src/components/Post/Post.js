@@ -14,6 +14,7 @@ import Meta from "./Meta";
 import Tags from "./Tags";
 import styles from "./Post.module.scss";
 import type { Node } from "../../types";
+import Adsense from "../GoogleAdsense";
 
 type Props = {
     post: Node,
@@ -49,6 +50,7 @@ const Post = ({ post, url }: Props) => {
                 </div>
                 <Meta date={date} />
                 {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
+                <Adsense />
                 <Author />
             </div>
 
