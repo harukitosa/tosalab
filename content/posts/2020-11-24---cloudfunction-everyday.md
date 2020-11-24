@@ -17,7 +17,7 @@ firestoreで運営しているアプリケーションがあり、データの�
 
 ## 要約
 
-- これで毎日動作させる関数の出来上がり
+これで毎日動作させる関数の出来上がり
 ```js
 functions.pubsub.schedule('every day 00:00').onRun((context) => {
     \\ 内容
@@ -68,7 +68,7 @@ firebase deploy --only functions
 
 ちなみになのですがonRequestはローカル上でfirebase emulatorを使用してテストすることができます。
 
-そんなこんなでcloud functionの概要を把握したので目的の処理であるデータ集計を作成していきます。functionsのpubsubを使用して定期実行されるようにします。pub/subはfirease-toolsのエミレーターにはないので自分は本番で害のないコードを動かしてみてテストしました。
+そんなこんなでcloud functionの概要を把握したので目的の処理であるデータ集計を作成していきます。functionsのpubsubを使用して定期実行されるようにします。pub/subはemulatorにはないので自分は本番で害のないコードを動かしてみてテストしました。
 
 schedule内の期間指定ですがUnix の Crontab と AppEngine の両方の構文をサポートしているようです。今回はAppEngineの記法で指定しました。every 5 minutesに指定すれば5分ごとなど詳しく設定することができます。
 
@@ -94,6 +94,7 @@ exports.createSalaryMap  = functions.pubsub.schedule('every day 00:00').onRun((c
     return functions.logger.info(err.message);
   })
 ```
+(awaitで書き直す予定)
 
 ここまででできたらデプロイしてコンソールのcloud functionを確認してみます。
 
