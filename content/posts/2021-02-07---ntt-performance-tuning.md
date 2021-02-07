@@ -289,6 +289,12 @@ NTT さんが用意してくださった問題は非常に良問でかなり学�
 
 インフラ担当のさんぽしくんのブログです！<br>非常に芸術点の高いタイトルとなっています。infra 目線の流れを知りたい方はめちゃくちゃ参考になると思います。
 
+<br>
+
+[NTT Perfomance Tuning Challenge に参加した](https://mesimasi.com/ntt-perfomance-tuning-challenge/)
+
+DB と App 担当のましくんのブログです！<br>シーク法、今回初めて知りました（おい）。かなり難しい実装だと思うのですがさすがです。<br>index をはる技術は最強です。
+
 ## 補足
 
 ### ISUCON 名言
