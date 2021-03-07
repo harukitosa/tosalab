@@ -15,23 +15,24 @@ type Props = {
 };
 
 const CategoryTemplate = ({ data, pageContext }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+    const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
 
-  const {
-    category,
-    currentPage,
-    prevPagePath,
-    nextPagePath,
-    hasPrevPage,
-    hasNextPage,
-  } = pageContext;
+    const {
+        category,
+        currentPage,
+        prevPagePath,
+        nextPagePath,
+        hasPrevPage,
+        hasNextPage,
+    } = pageContext;
 
-  const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0
-    ? `${category} - Page ${currentPage} - ${siteTitle}`
-    : `${category} - ${siteTitle}`;
+    const { edges } = data.allMarkdownRemark;
+    const pageTitle =
+        currentPage > 0
+            ? `${category} - Page ${currentPage} - ${siteTitle}`
+            : `${category} - ${siteTitle}`;
 
-  return (
+    return (
         <Layout title={pageTitle} description={siteSubtitle}>
             <Sidebar />
             <Page title={category}>
@@ -44,7 +45,7 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
                 />
             </Page>
         </Layout>
-  );
+    );
 };
 
 export const query = graphql`
